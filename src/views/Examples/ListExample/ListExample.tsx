@@ -38,7 +38,7 @@ function ListExample(props: ListExampleProps) {
   return (
     <React.Fragment>
       <Head>
-        <title>{`Nexys${metaData ? ` | ${metaData?.title}` : ''}`}</title>
+        <title>{`Freeman`}</title>
       </Head>
 
       <Content style={{ marginBottom: 20 }}>

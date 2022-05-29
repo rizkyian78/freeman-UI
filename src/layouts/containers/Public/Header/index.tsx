@@ -12,36 +12,43 @@ function Header(props: BaseHeaderProps) {
     <BaseHeader {...props}>
       <Col flex={'none'}>
         <Row>
-          <Col style={{ alignSelf: 'center' }}>
-            <Link href={'/'}>
+          <Col>
+          <Link href={'/'}>
               <a>
-                <Avatar
-                  style={{
-                    backgroundColor: '#e21d26',
-                  }}
-                  size={'large'}
-                >
-                  <Text bold>NX</Text>
-                </Avatar>
+            <Title italic  noMargin style={{ padding: 6, color: "#D61F26", fontWeight: "bolder" }}>
+              Freeman
+            </Title>
               </a>
             </Link>
           </Col>
-          <Col>
-            <Title noMargin style={{ padding: 6 }}>
-              Nexys
-            </Title>
-          </Col>
         </Row>
       </Col>
+      <Row>
+        
+      </Row>
       <Col flex={'auto'} style={{ textAlign: 'end' }}>
+        <Row justify='end' >
+
         <Link href={'#contributors'}>
           <a>
-            <Button danger>
-              <Text fontFamily={'bold'}>Contributors</Text>
-            </Button>
+              <Text fontFamily={'bold'}>About Us</Text>
+          </a>
+        </Link> 
+
+        <Link href={'#contributors'}>
+          <a style={{paddingLeft: 20}}>
+              <Text fontFamily={'bold'}>Services</Text>
           </a>
         </Link>
+        
+        <Link href={'#contributors'}>
+          <a style={{paddingLeft: 20}}>
+              <Text fontFamily={'bold'}>Contact Us</Text>
+          </a>
+        </Link>
+        </Row>
       </Col>
+        
     </BaseHeader>
   )
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import Content from '@nexys/components/Content/Content'
-import Welcome from 'views/Home/partials/Welcome'
+import ContentAboutMe from 'views/Home/partials/ContentAboutMe'
+import ContentOurService from 'views/Home/partials/ContentOurService'
+import ContentContactUs from 'views/Home/partials/ContentContactUs'
 import WhatWillLearn from 'views/Home/partials/WhatWillLearn'
 import useDataWhatWilllearns from 'views/Home/partials/useDataWhatWillLearns'
 
@@ -25,19 +27,17 @@ function Home(props: HomeProps) {
   return (
     <div>
       <Content style={{ ...styleContent }}>
-        <Welcome />
+        <ContentAboutMe />
+        <ContentOurService />
+        <ContentContactUs />
       </Content>
 
       <Content
         id={'whatWillLearn'}
-        styleContainer={{
-          backgroundColor: '#f3f3f3',
-        }}
         style={{
           ...styleContent,
         }}
       >
-        <WhatWillLearn data={listWhatWillLearns} />
       </Content>
     </div>
   )

@@ -9,8 +9,9 @@ const routes = [
     exact: true,
   },
   {
-    path: '/examples/',
+    path: '/examples',
     layout: PublicContainer,
+    exact: true
   },
 ]
 
