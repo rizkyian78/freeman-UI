@@ -2,7 +2,7 @@ import Explore from 'views/Explore/Explore'
 import fs from 'fs'
 
 export async function getServerSideProps() {
-  const filePath = [process.cwd(), 'src/@nexys', 'examples',].join('/')
+  const filePath = [process.cwd(), 'src/@nexys', 'examples'].join('/')
 
   const listDir = fs.readdirSync(filePath)
 
