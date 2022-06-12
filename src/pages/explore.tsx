@@ -1,4 +1,4 @@
-import Home from 'views/Home/Home'
+import Explore from 'views/Explore/Explore'
 import fs from 'fs'
 
 export async function getServerSideProps() {
@@ -23,4 +23,4 @@ export async function getServerSideProps() {
   }
 }
 
-export default Home
+export default Explore

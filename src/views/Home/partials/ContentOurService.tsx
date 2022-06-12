@@ -50,7 +50,7 @@ function ContentAboutMe() {
           <Avatar size={64} icon={<UserOutlined />} />
           <Avatar size={64} icon={<UserOutlined />} />
         </Row>
-        <Link href="#">
+        <Link href="/explore">
           <a>
             <Button size="large" type={'primary'}>
               Explore Our Talents

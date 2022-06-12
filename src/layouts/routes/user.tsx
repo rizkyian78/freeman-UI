@@ -9,7 +9,7 @@ const routes = [
     exact: true,
   },
   {
-    path: '/examples',
+    path: '/explore',
     layout: PublicContainer,
     exact: true
   },

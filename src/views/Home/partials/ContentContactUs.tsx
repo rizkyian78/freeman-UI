@@ -39,15 +39,13 @@ function ContentAboutMe() {
             fontSize: 20,
             paddingBottom: 40
           }}
-        >Currently we're looking for any talent that want to join us :
+        >Currently we're looking for any talent who want to join us :
         </Typography>
-        <Link href="#">
-          <a >
+          <a href={`mailto:test@example.com?subject=Asking About Talent Job!`} >
             <Button size="large" type={'primary'}>
               Say Hello
             </Button>
           </a>
-        </Link>
 
       </Col>
     </Row>
