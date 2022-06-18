@@ -1,12 +1,12 @@
 import React from 'react'
 import { Button, Col, Row, Typography, Avatar } from 'antd'
 import Title from '@nexys/components/Typography/Title'
-import Text from '@nexys/components/Typography/Text'
 import Image from 'next/dist/client/image'
 import Link from 'next/link'
 import { UserOutlined } from '@ant-design/icons'
+import LazyImgwrapper from '@nexys/components/LazyImgWrapper'
 
-function ContentAboutMe() {
+function ContentOurService() {
   return (
     <Row
       gutter={[10, 0]}
@@ -26,7 +26,6 @@ function ContentAboutMe() {
         >
           Our Service
         </Title>
-        <br />
         <Typography
           style={{
             fontSize: 20,
@@ -44,25 +43,20 @@ function ContentAboutMe() {
             paddingBottom: 100,
           }}
         >
-          <Avatar size={64} icon={<UserOutlined />} />
-          <Avatar size={64} icon={<UserOutlined />} />
-          <Avatar size={64} icon={<UserOutlined />} />
-          <Avatar size={64} icon={<UserOutlined />} />
-          <Avatar size={64} icon={<UserOutlined />} />
         </Row>
-        <Link href="/explore">
-          <a>
+          <a href="/explore">
             <Button size="large" type={'primary'}>
               Explore Our Talents
             </Button>
           </a>
-        </Link>
       </Col>
       <Col xs={24} sm={12}>
-        <Image
+
+
+        <img
           width={500}
           height={450}
-          src={'/static/images/successful-leader.png'}
+          src={'/static/images/development.png'}
           alt={'illustration'}
         />
       </Col>
@@ -70,4 +64,4 @@ function ContentAboutMe() {
   )
 }
 
-export default ContentAboutMe
+export default ContentOurService
