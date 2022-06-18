@@ -51,9 +51,7 @@ function ContentOurService() {
           </a>
       </Col>
       <Col xs={24} sm={12}>
-
-
-        <img
+        <Image
           width={500}
           height={450}
           src={'/static/images/development.png'}
