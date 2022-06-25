@@ -13,6 +13,11 @@ const routes = [
     layout: PublicContainer,
     exact: true
   },
+  {
+    path: '/explore/:id',
+    layout: PublicContainer,
+    exact: true
+  },
 ]
 
 export default routes

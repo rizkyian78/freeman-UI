@@ -1,16 +1,20 @@
 import React from 'react'
-import { Button, Col, Input, Row, Space, Typography } from 'antd'
+import { Button, Col, Input, Row, Space, Typography, } from 'antd'
 import Title from '@nexys/components/Typography/Title'
 import Text from '@nexys/components/Typography/Text'
 import Image from 'next/dist/client/image'
 import Link from 'next/link'
 import { Select, Avatar, Card } from 'antd'
 import { AntDesignOutlined, UserOutlined } from '@ant-design/icons'
+import router from 'next/router'
 
 const { Option } = Select
 
 function ListTalent() {
   const [isSearch, setIsSearch] = React.useState<boolean>(false)
+  const data = {
+    id: "123"
+  }
   return (
     <>
       <Row
@@ -52,11 +56,14 @@ function ListTalent() {
               />
             </Col>
           </Row>
-          <a href="/explore">
+          <a href="/explore" style={{
+            paddingLeft: '10%'
+          }}>
             <Button
               style={{
                 width: 200,
                 marginTop: 30,
+                
               }}
               size="large"
               type={'primary'}
@@ -90,7 +97,7 @@ function ListTalent() {
           onClick={() => console.log('bisaa')}
         >
           <Space direction="horizontal">
-            <Avatar size={200} icon={<UserOutlined />} />
+            {/* <Avatar size={200} icon={<UserOutlined />} /> */}
             <Space direction="vertical">
               <Typography.Title level={4}>
                 Status: <span style={{ color: 'green' }}>Available</span>
@@ -112,18 +119,24 @@ function ListTalent() {
             </>
           }
           hoverable
-          onClick={() => console.log('bisaa')}
+          
+          onClick={() => router.push(`/explore/${data.id}`)}
         >
           <Space direction="horizontal">
-            <Avatar size={200} icon={<UserOutlined />} />
+            {/* <Avatar size={200} icon={<UserOutlined />} /> */}
             <Space direction="vertical">
               <Typography.Title level={4}>
                 Status: <span style={{ color: 'green' }}>Available</span>
               </Typography.Title>
+              <Typography style={{paddingBottom: 30}}>
               After the devastating events of Avengers: Infinity War (2018), the
               universe is in ruins. With the help of remaining allies, the
               Avengers assemble once more in order to reverse Thanos' actions
               and restore balance to the universe.
+                </Typography> 
+                <Button size="large" type={'primary'}>
+              8.4
+            </Button>
             </Space>
           </Space>
         </Card>

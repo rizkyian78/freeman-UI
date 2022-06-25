@@ -12,6 +12,7 @@ function Footer(props: ContentProps) {
       style={{
         padding: 16,
         color: 'white',
+        marginTop: 200
       }}
       styleContainer={{
         backgroundColor: 'black',
