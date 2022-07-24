@@ -18,6 +18,11 @@ const routes = [
     layout: PublicContainer,
     exact: true
   },
+  {
+    path: '/transaction/:id',
+    layout: PublicContainer,
+    exact: true
+  },
 ]
 
 export default routes
